@@ -21,17 +21,17 @@ function checkAb() {
         if (b < check1 * check2) {
           const profit = check1 * check2 - b;
           console.log(
-            `arbitrage possible. possible profit ${profit} with starting at ${b}`
+            `arbitrage possible. possible profit: ${profit} starting at ${b}`
           );
         } else if (c < check2 * check3) {
           const profit = check2 * check3 - c;
           console.log(
-            `arbitrage possible. possible profit ${profit} starting at ${c}`
+            `arbitrage possible. possible profit: ${profit} starting at ${c}`
           );
         } else if (a < check1 * check3) {
           const profit = check1 * check3 - a;
           console.log(
-            `arbitrage possible. possible profit ${profit} starting at ${a}`
+            `arbitrage possible. possible profit: ${profit} starting at ${a}`
           );
         } else {
           console.log("No arbitrage opportunity");
